@@ -1,0 +1,18 @@
+create table Usuario(
+    uuid varchar2(36) primary key,
+    correo varchar2(255),
+    contrasena varchar2(255)
+);
+
+drop table Usuario
+
+create table Tickets(
+numero_ticket varchar2(36)primary key,
+titulo varchar2(255),
+descripcion varchar2 (50),
+autor varchar2(255),
+email_contacto varchar2(255),
+fecha_creacion varchar2(20),
+estado varchar2(11),
+fecha_finalizacion varchar2 (20)
+);

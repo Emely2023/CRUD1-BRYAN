@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".itemcard">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="410dp"
+        android:layout_height="236dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/lbautorDeTicket"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="23dp"
+            android:layout_marginBottom="10dp"
+            android:text="Text"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/imgEditar"
+            app:layout_constraintEnd_toStartOf="@+id/lbfechaDeFinalizacionDeTicket"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbdescripcionDeTicket" />
+
+        <TextView
+            android:id="@+id/lbestadoDeTicket"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="15dp"
+            android:text="Text"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/lbfechaDeFinalizacionDeTicket"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lbdescripcionDeTicket"
+            app:layout_constraintTop_toBottomOf="@+id/lbfechaDeCreacionDeTicket" />
+
+        <TextView
+            android:id="@+id/lbdescripcionDeTicket"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="23dp"
+            android:layout_marginBottom="15dp"
+            android:text="Text"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/lbautorDeTicket"
+            app:layout_constraintEnd_toStartOf="@+id/lbestadoDeTicket"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbtituloDeTicket" />
+
+        <TextView
+            android:id="@+id/lbuuid"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="23dp"
+            android:layout_marginBottom="18dp"
+            android:text="Text"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/lbtituloDeTicket"
+            app:layout_constraintEnd_toStartOf="@+id/lbemailDeAutor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lbemailDeAutor"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="18dp"
+            android:text="Text"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/lbfechaDeCreacionDeTicket"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lbuuid"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lbfechaDeCreacionDeTicket"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="14dp"
+            android:text="Text"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/lbestadoDeTicket"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lbtituloDeTicket"
+            app:layout_constraintTop_toBottomOf="@+id/lbemailDeAutor" />
+
+        <TextView
+            android:id="@+id/lbtituloDeTicket"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="23dp"
+            android:layout_marginBottom="14dp"
+            android:text="Text"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/lbdescripcionDeTicket"
+            app:layout_constraintEnd_toStartOf="@+id/lbfechaDeCreacionDeTicket"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbuuid" />
+
+        <TextView
+            android:id="@+id/lbfechaDeFinalizacionDeTicket"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="10dp"
+            android:text="Text"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/imgEliminar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lbautorDeTicket"
+            app:layout_constraintTop_toBottomOf="@+id/lbestadoDeTicket" />
+
+        <ImageButton
+            android:id="@+id/imgEliminar"
+            android:layout_width="54dp"
+            android:layout_height="34dp"
+            android:layout_marginEnd="75dp"
+            android:layout_marginBottom="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgEditar"
+            app:layout_constraintTop_toBottomOf="@+id/lbfechaDeFinalizacionDeTicket"
+            app:srcCompat="@drawable/baseline_delete_24" />
+
+        <ImageButton
+            android:id="@+id/imgEditar"
+            android:layout_width="54dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="63dp"
+            android:layout_marginEnd="116dp"
+            android:layout_marginBottom="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imgEliminar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbautorDeTicket"
+            app:srcCompat="@drawable/baseline_create_24" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
